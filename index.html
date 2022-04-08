@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul class="nav justify-content-end mb-4 me-5  firstline">
+            <center><h1 class="logo mt-4">
+                CRISPY KITCHEN
+            </h1></center>
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li> -->
+             
+          <span class="menus">
+            <a href="index.html" ><button class="buttons">HOME</button></a>
+            <a href="#about" ><button class="buttons">ABOUT</button></a>
+            <a href="#contact" ><button class="buttons">CONTACT</button></a>
+            <a href="#reserve" ><button class="buttons">RESERVATIONS</button></a>
+        </span>
+          </ul>
+
+    </div>
+
+    <div class="img">
+
+
+        <a href="burger.html" ><button class="buttons menu">LET ME SEE THE MENU</button></a>
+        
+    </div>
+
+  <section class="bg-dark">
+      <center><h3 class="color">THE MENU</h3></center>
+      <span class="menus">
+          <a href="#" ><button class="menunu">BURGER</button></a>
+          <a href="#" ><button class="menunu">PIZZA</button></a>
+          <a href="burger.html" ><button class="menunu">STARTER</button></a>
+      </span>
+      <br>
+  </section>
+
+  <section class="about" id="about" >
+      <br>
+      <center><h3 class="mt-5">ABOUT US</h3></center>
+      <center><p class="">This restaurant was founded by Lorem ipsum, dolor sit amet consectetur adipisicing
+           elit. Autem facilis sequi deserunt. <br> Fuga rerum consequuntur est maxime deserunt quod,
+            officiis eum beatae quo, ipsam ex aut nisi expedita ad eius? <br><br> <b>THE CHEF:</b> MR ANDREW SHAW IV </p></center>
+            
+            <center><img src="https://www.w3schools.com/w3images/onepage_restaurant.jpg" alt="restaursant interior"></center>
+        <br>
+        <h3 class="hours">OPENING HOURS</h3>
+        <h4 class="hours"> Mondays-tuesdays     -          closed</h4>
+        <h4 class="hours">wednessday- sundays   -        10:00 to 24:00</h4>
+        <br>
+        </section>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static.toiimg.com/photo/79811787.cms" class="d-block w-100" alt="burger picture" height="700px" width="250px">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/photos/homemade-indian-chicken-tikka-masala-pizza-picture-id1340589333?b=1&k=20&m=1340589333&s=170667a&w=0&h=rQaaNq-2klpZXcZ26amIfELKxq78-9S79FycY7Kzu28=" class="d-block w-100" alt="pizza image" height="700px" width="250px">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/photos/fried-chicken-breast-chicken-tenders-or-fingers-served-at-restaurant-picture-id870887184?k=20&m=870887184&s=612x612&w=0&h=vyuoRVyX4BSFEuomyKY1ViLoQwr1fTEZsa-EcysirSI=" class="d-block w-100" alt="starters image" height="700px" width="250px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<div>
+   <form name="reserveForm" class="reserve" id="reserve form" onsubmit="return validateForm(event)">
+       <br>
+       <center><h3>RESERVE A TABLE</h3></center>
+       <p class="formaction">Find us at some address at some place or call us at 05050515-122330</p>
+       <P class="formaction">RESERVE A TABLE OR ASK FOR TODAYS SPECIAL OR JUST CALL SOMEONE</P>
+       <input class="formaction" id="name" name="name" type="text" placeholder="NAME"/><br><br>
+       <input class="formaction" id="number" name="number" type="number" placeholder="NUMBER OF PEOPLE"/><br><br>
+       <input class="formaction" id="date" name="date" type="datetime-local" name="date" id="" required/><br><br>
+       <input class="formaction" id="message" name="message" type="text" placeholder="SPECIAL REQUIREMENTS (OPTIONAL)"/><br><br>
+       <!-- <input class="formaction" name="submit" type="button" value="SEND MESSAGE"> -->
+       <button class="formaction" id="submit" type="submit">SEND MESSAGE</button>
+       
+
+   </form>
+   <hr>
+</div>
+<footer id="contact">
+    <center><p> CALL US TODAY AT 227-33443340 </p></center>
+    <center> <p>finalprojects2022.com</p> </center>
+    <a href="">go back to top</a>
+</footer>
+ 
+<script src="index.js"></script>
+</body>
+</html>

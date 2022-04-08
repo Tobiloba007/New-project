@@ -1,0 +1,173 @@
+body{
+    max-width: 100%;
+    font: verdana;
+    background-color: black;
+}
+.firstline{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(241, 238, 238);
+}
+
+.logo{
+    margin-right: 170px;
+    color: green;
+    font-weight: lighter;
+}
+.image{
+    width: 100%;
+    filter: brightness(40%);
+}
+
+/* .buttons{
+    background-color: tomato;
+    border-radius: 8px;
+    height: 10vh;
+    width: 200px;
+    color: black;
+    font-size: larger;
+} */
+.buttons{
+    background-color: black;
+    border-radius: 8px;
+    height: 5vh;
+    width: auto;
+    color: white;
+    font-size: larger;
+    margin-top: 30px;
+    margin-right: 5px;
+    border: thin tomato; 
+}
+.menus{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 50px;
+}
+.menunu{
+    background-color: tomato;
+    color: black;
+    border-radius: 7px;
+    height: 7vh;
+    width: 120px;
+}
+.about{
+  background-color: grey;
+  filter: brightness(100%);
+}
+.color{
+    color: white;
+}
+.reserve{
+    background-color: rgb(32, 94, 73);
+    margin: auto;
+}
+.formaction{
+    margin-left: 200px;
+    font-size: large;
+}
+input{
+    width: 800px;
+    height: 70px;
+}
+.hours{
+    margin-left: 270px;
+
+}
+.img{
+    background-image: url(https://insanelygoodrecipes.com/wp-content/uploads/2020/05/Burger-with-fries-1024x536.png);
+    background-size: cover;
+    height: 100vh;
+}
+.menu{
+    margin-left: 650px;
+    margin-top: 320px;
+    height: 10vh;
+    background-color: tomato;
+    color: black;
+}
+footer{
+    color: white;
+}
+
+#submit{
+    width: 200px;
+    height: 50px;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    border: solid white;
+    background-color: rgb(32, 94, 73);
+    color: black;
+}
+
+           /* Media Query */
+   @media screen and (max-width: 992px) {
+
+    .menu{
+        margin-left: 400px;
+        margin-top: 320px;
+        height: 10vh;
+        background-color: tomato;
+        color: black;
+        position: relative;
+    }
+    .menus{
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 250px;
+    }
+    .logo{
+        margin-right: 270px;
+        color: green;
+        font-weight: lighter;
+    }
+    
+    .formaction{
+        margin-left: 50px;
+        font-size: large;
+    }
+    
+   }
+   @media screen and (max-width: 768px) {
+
+    .menus{
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 200px;
+        margin-bottom: 10px;
+    }
+    .logo{
+        margin-right: 250px;
+        color: green;
+        font-weight: lighter;
+    }
+    .menu{
+        margin-left: 270px;
+        margin-top: 320px;
+        height: 10vh;
+        background-color: tomato;
+        color: black;
+        position: relative;
+    }
+    .formaction{
+        width: 550px;
+        font-size: large;
+    }
+   }
+
+   @media screen and (max-width: 576px) {
+    .logo{
+        margin-left: 200px;
+        color:green;
+        font-weight: lighter;
+    }
+    .menus{
+        display: flex;
+        justify-content: space-evenly;
+       margin-bottom: 10px;
+       margin-left: 300px;
+    }
+    .formaction{
+        width: 350px;
+        font-size: large;
+    }
+   }
